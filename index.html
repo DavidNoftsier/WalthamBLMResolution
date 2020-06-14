@@ -71,17 +71,17 @@
 		</div>
 		<div class='video-container center-align'>
 			<h2 class='center-align'>Explanatory Video</h2>
-			<h4 class='center-align'>Watch a video explanation of the issue with audio/footage from the June 8th Council Meeting</h2>
-				<div>
+			<h4 class='center-align'>Watch a video explanation of the issue with audio/footage from the June 8th Council Meeting</h4>
+				<div class='video-responsive'>
 					<iframe 
-					width="560" 
-					height="315" 
-					src="https://www.youtube.com/embed/T8xkYpZtBKg" 
-					frameborder="0" 
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-					allowfullscreen>
-				</iframe>
-				<div>
+						width="560" 
+						height="315" 
+						src="https://www.youtube.com/embed/T8xkYpZtBKg" 
+						frameborder="0" 
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+						allowfullscreen>
+					</iframe>
+				</div>
 		</div>
 		<div class='next-steps-list center-align'>
 			<h2>Things You Can Do To Help</h2>
@@ -141,6 +141,21 @@
 		.next-steps-list div:not(.first),
 		.resource-list div:not(.first) {
 			padding-top: 15px;
+		}
+
+		.video-responsive{
+    	overflow:hidden;
+    	padding-bottom:56.25%;
+    	position:relative;
+    	height:0;
+		}
+		
+		.video-responsive iframe{
+    	left:0;
+    	top:0;
+    	height:100%;
+    	width:100%;
+			position:absolute;
 		}
 
 		@media screen and (min-width: 480px){
