@@ -2,24 +2,24 @@
 <html>
 	<head>
 		<title>Waltham BLM Resolution</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 	</head>
 
 	<body>
 		<header>
 			<h1 
-				style='font-size: 140px;'
-				class='center-align'
+				class='header center-align'
 			>
 				Black Lives Matter Resolution
 			</h1>
 			<h3
-				style='font-size: 40px;'
-				class='center-align'
+				'
+				class='sub-header center-align'
 			>
 				Waltham, MA - June 2020
 			</h3>
 		</header>
-		<div>
+		<div class='primary-article'>
 			<h2>BLACK LIVES MATTER</h2>
 
 			<p>
@@ -41,23 +41,26 @@
 				- Chris Gamble
 			</p>
 		</div>
+		<div class='next-steps-list center-align'>
+			<h2>Things You Can Do To Help</h2>
+			<div class='first'>
+				<a href='https://www.facebook.com/events/270511800965588'>
+					Rally in Support of BLM Resolution - June 15th 5:45PM-7:00PM at 119 School St, Waltham, MA 02452
+				</a>
+			</div>
+			<div>
+				<a href='https://actionnetwork.org/groups/waltham-for-blm'>
+					Waltham for BLM - Send an email to the Public Works Committee
+				</a>
+			</div>
+		</div>
 		<div class='resource-list center-align'>
-			<h2>Resources & Next Steps</h2>
+			<h2>Resources</h2>
 			<div class='first'>
 				<a href='https://docs.google.com/document/d/1qNfsQEEKra0C2V-F4xlaJZXBQs-Hdv650M_juXBC56U'>
 					Councillor Mackins Black Lives Matter Resolution
 				</a>
-			</div>
-			<div>
-				<a href='https://www.facebook.com/events/270511800965588'>
-					Rally in Support of BLM Resolution
-				</a> - June 15th 5:45PM-7:00PM at 119 School St, Waltham, MA 02452
-			</div>
-			<div>
-				<a href='https://actionnetwork.org/groups/waltham-for-blm'>
-					Waltham for BLM
-				</a>
-			</div>
+			</div>	
 			<div>
 				<a href='https://docs.google.com/spreadsheets/d/1SU2bVv8et-LHEUYQh5gVwcv1a9X58YpXknaNkP5kr3Y'>
 					Instances of Waltham Council Acting Resolutions without committee involvement 
@@ -65,15 +68,13 @@
 			</div>
 			<div>
 				<a href='https://www.city.waltham.ma.us/city-council/agenda/committee-meeting-docket-agendas-6-15-20'>
-					Committee Meeting Docket for June 15
+					Committee Meeting Docket for June 15, including Public Works Committee at 6:00PM
 				</a>
-				, including Public Works Committee at 6:00PM
 			</div>
 			<div>	
 				<a href='http://www.wcac.org/government/meetings/city-council/city-council-6-8-20'>
-					Full Video of June 8, 2020 Council Meeting
+					Full Video of June 8, 2020 Council Meeting (produced and hosted by WCAC)
 				</a>
-				 (produced and hosted by WCAC)
 			</div>
 			<div>
 				<a href='https://www.city.waltham.ma.us/city-council'>
@@ -89,9 +90,41 @@
 	</body>
 
 	<style type='text/css'>
-		.center-align{
+		@media screen and (min-width: 480px){
+			.header{
+				padding: 0 200px;
+				font-size: 140px;
+			}
+			.sub-header{
+				font-size: 40px;
+			}
+			.primary-article{
+				padding: 0 200px;
+			}
+		}
+
+		@media screen and (max-width: 479px){
+			.header{
+				font-size: 60px;
+			}
+			.subh-header{
+				font-size: 20px;
+			}
+			.primary-article{
+				padding: 0 25px;
+			}
+
+			.primary-article,
+			.next-steps-list,
+			.resource-list {
+				font-size: 20px;
+			}
+		}
+
+		.center-align {
 			text-align: center;
 		}
+		.next-steps-list div:not(.first),
 		.resource-list div:not(.first) {
 			padding-top: 15px;
 		}
